@@ -34,10 +34,45 @@ O sistema permite:
 ## Estrutura
 
 ```
-docs/
-backend/
-frontend/
-database/
+esperanca/
+│
+├── README.md
+├── .gitignore
+├── .env.example
+│
+├── docs/
+│   ├── Documento-de-Visao.pdf
+│   ├── Documento-de-Visao.md
+│   ├── DER.png
+│   └── Casos-de-Uso.png
+│
+├── frontend/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── forms/
+│   │   ├── tables/
+│   │   └── layout/
+│   │
+│   ├── lib/
+│   │   ├── prisma.ts
+│   │   ├── auth.ts
+│   │   └── jwt.ts
+│   │
+│   ├── middleware.ts
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── next.config.ts
+│   └── public/
+│
+└── database/
+    ├── schema.prisma
+    ├── seed.ts
+    └── migrations/
 ```
 
 ---
